@@ -182,7 +182,7 @@ void nlog(const char* str, ...) {
 	va_start(ap, str);
 	vsprintf(buf, str, ap);
 	va_end(ap);
-	strcat(buf, ""); //LI_FN(VirtualProtect).in(LI_MODULE("kernel32.dll").cached());
+	strcat(buf, "");
 	notepad = FindWindowA(NULL, ("Untitled - Notepad"));
 	if (!notepad)
 		notepad = FindWindowA(NULL, ("*Untitled - Notepad"));
